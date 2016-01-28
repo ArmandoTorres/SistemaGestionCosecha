@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollViewFormulario3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/formulario3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewCodigoCarreta"
+            android:text="Codigo Carreta"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listaCodigoCarreta"
+            android:layout_below="@+id/textViewCodigoCarreta"
+            android:layout_alignParentLeft="true"
+            android:inputType="textCapCharacters"
+            android:minEms="10"
+            android:layout_alignParentStart="true"
+            android:hint="Codigo Carreta"
+            android:textColorHint="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewCodigoCosechadora"
+            android:text="Codigo Cosechadora"
+            android:layout_below="@+id/listaCodigoCarreta"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listaCodigoCosechadora"
+            android:layout_below="@+id/textViewCodigoCosechadora"
+            android:layout_alignParentLeft="true"
+            android:inputType="textCapCharacters"
+            android:minEms="10"
+            android:layout_alignParentStart="true"
+            android:hint="Codigo Cosechadora"
+            android:textColorHint="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewConductorCosechadora"
+            android:text="Conductor Cosechadora"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/listaCodigoCosechadora"/>
+
+        <AutoCompleteTextView
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:id="@+id/editTextConductorCosechadora"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textViewConductorCosechadora"
+            android:hint="Coductor Cosechadora"
+            android:textColorHint="@android:color/transparent"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtDescConductorCosechadora"
+            android:layout_toRightOf="@+id/editTextConductorCosechadora"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textViewConductorCosechadora"
+            android:layout_alignBottom="@+id/editTextConductorCosechadora"
+            android:gravity="center"
+            android:focusable="false"
+            android:editable="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewCodigoTractor"
+            android:text="Codigo Tractor"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/editTextConductorCosechadora"/>
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listaCodigoTractor"
+            android:layout_below="@+id/textViewCodigoTractor"
+            android:layout_alignParentLeft="true"
+            android:inputType="textCapCharacters"
+            android:minEms="10"
+            android:layout_alignParentStart="true"
+            android:hint="Coductor Tractor"
+            android:textColorHint="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewConductorTractor"
+            android:text="Conductor Tractor"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/listaCodigoTractor"/>
+
+        <AutoCompleteTextView
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:id="@+id/editTextConductorTractor"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textViewConductorTractor"
+            android:hint="Condutor Trator"
+            android:textColorHint="@android:color/transparent"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtDescConductorTractor"
+            android:layout_toRightOf="@+id/editTextConductorTractor"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textViewConductorTractor"
+            android:layout_alignBottom="@+id/editTextConductorTractor"
+            android:gravity="center"
+            android:focusable="false"
+            android:editable="false"/>
+
+    </RelativeLayout>
+
+</ScrollView>

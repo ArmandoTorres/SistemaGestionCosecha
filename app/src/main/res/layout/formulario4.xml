@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollViewFormulario4"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/formulario4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewCodigoApuntador"
+            android:text="Codigo Apuntador"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <AutoCompleteTextView
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:id="@+id/editTextCodigoApuntador"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textViewCodigoApuntador"
+            android:hint="Codigo Apuntador"
+            android:textColorHint="@android:color/transparent"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtDescCodigoApuntador"
+            android:layout_toRightOf="@+id/editTextCodigoApuntador"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textViewCodigoApuntador"
+            android:layout_alignBottom="@+id/editTextCodigoApuntador"
+            android:gravity="center"
+            android:focusable="false"
+            android:editable="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewCodigoVagon"
+            android:text="Codigo Vagon"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/editTextCodigoApuntador"/>
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listaCodigoVagones"
+            android:inputType="textCapCharacters"
+            android:minEms="10"
+            android:layout_below="@+id/textViewCodigoVagon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Home Categories-->
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="@string/app_name"/>
+
+    <item
+        android:id="@+id/nav_change_user"
+        android:icon="@drawable/user"
+        android:title="@string/switch_user"/>
+
+    <!--Works Categories-->
+    <item
+        android:id="@+id/nav_work_item"
+        android:title= "@string/work_title"
+        android:menuCategory="container">
+        <menu>
+            <item
+                android:id="@+id/work_digitacion"
+                android:icon="@drawable/new_envio"
+                android:title="@string/work"/>
+        </menu>
+    </item>
+
+    <!--Reports Categories-->
+    <item
+        android:id="@+id/nav_reports"
+        android:title= "@string/reports"
+        android:menuCategory="container">
+        <menu>
+            <item
+                android:id="@+id/menu_envio_report"
+                android:icon="@drawable/report_envio"
+                android:title="@string/menuEnviosOpcion"/>
+        </menu>
+    </item>
+
+    <!--Sync Categories-->
+    <item
+        android:id="@+id/nav_sync"
+        android:menuCategory="container"
+        android:title="@string/sync_title">
+        <menu>
+            <item
+                android:id="@+id/client_sync"
+                android:title="@string/client"
+                android:icon="@drawable/sync_cliente"/>
+            <item
+                android:id="@+id/server_sync"
+                android:title="@string/server"
+                android:icon="@drawable/sync_server"/>
+        </menu>
+    </item>
+
+    <!--Settings Categories-->
+    <item
+        android:id="@+id/nav_categories"
+        android:title="@string/settings">
+        <menu>
+            <item
+                android:id="@+id/setting"
+                android:icon="@drawable/setting"
+                android:title="@string/server"/>
+        </menu>
+    </item>
+
+    <!--Sign out-->
+    <item
+        android:id="@+id/nav_sign_out"
+        android:title="@string/logout"
+        android:icon="@drawable/logout"/>
+
+    <!--Select bluetooth device-->
+    <item
+        android:id="@+id/nav_select_bluetooth"
+        android:title="@string/select_bluetooth_device"
+        android:icon="@drawable/bluetooth"/>
+
+</menu>

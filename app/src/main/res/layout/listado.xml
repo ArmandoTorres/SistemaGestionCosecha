@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listado"
+                android:layout_margin="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Filtro: "
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/textViewFiltro"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:inputType="date"
+        android:id="@+id/editFiltroPorFecha"
+        android:layout_toRightOf="@+id/textViewFiltro"
+        android:layout_toLeftOf="@+id/generarReporte"
+        android:layout_toStartOf="@+id/generarReporte" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:src="@drawable/buscar"
+        android:id="@+id/generarReporte"
+        android:background="@drawable/hover_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewTransacciones"
+        android:layout_below="@+id/editFiltroPorFecha"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

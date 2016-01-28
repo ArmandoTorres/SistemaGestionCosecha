@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollViewFormulario1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:orientation="vertical"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:id="@+id/formulario1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewFrenteCorte"
+            android:text="Frente de Corte"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextFrenteCorte"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textViewFrenteCorte"
+            android:hint="Frente de Corte"
+            android:textColorHint="@android:color/transparent"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtDescFteCorte"
+            android:layout_toRightOf="@+id/editTextFrenteCorte"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textViewFrenteCorte"
+            android:layout_alignBottom="@+id/editTextFrenteCorte"
+            android:gravity="center"
+            android:editable="false"
+            android:focusable="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewFrenteAlce"
+            android:text="Frente de Alce"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/editTextFrenteCorte"/>
+
+        <EditText
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/editTextFteAlce"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textViewFrenteAlce"
+            android:textColorHint="@android:color/transparent"
+            android:hint="Frente de Alce"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtDescFteAlce"
+            android:layout_toRightOf="@+id/editTextFteAlce"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textViewFrenteAlce"
+            android:layout_alignBottom="@+id/editTextFteAlce"
+            android:editable="false"
+            android:focusable="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewFinca"
+            android:text="La Finca"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/editTextFteAlce"/>
+
+        <EditText
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/editTextFinca"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textViewFinca"
+            android:textColorHint="@android:color/transparent"
+            android:hint="Finca"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtDescFinca"
+            android:layout_toRightOf="@+id/editTextFinca"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textViewFinca"
+            android:layout_alignBottom="@+id/editTextFinca"
+            android:editable="false"
+            android:focusable="false"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewCanial"
+            android:text="El Cañal"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/editTextFinca"/>
+
+        <EditText
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/editTextCanial"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textViewCanial"
+            android:textColorHint="@android:color/transparent"
+            android:hint="Cañal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtDescCanial"
+            android:layout_toRightOf="@+id/editTextCanial"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textViewCanial"
+            android:layout_alignBottom="@+id/editTextCanial"
+            android:gravity="center"
+            android:editable="false"
+            android:focusable="false"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textViewLote"
+                android:text="El Lote"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/editTextCanial"/>
+
+        <EditText
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:id="@+id/editTextlote"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textViewLote"
+            android:textColorHint="@android:color/transparent"
+            android:hint="Lote"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtDescLote"
+            android:layout_toRightOf="@+id/editTextlote"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textViewLote"
+            android:layout_alignBottom="@+id/editTextlote"
+            android:editable="false"
+            android:focusable="false"/>
+
+    </RelativeLayout>
+
+</ScrollView>

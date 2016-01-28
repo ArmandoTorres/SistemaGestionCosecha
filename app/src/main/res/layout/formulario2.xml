@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollViewFormulario2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/formulario2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewOrdenQuema"
+            android:text="Orden de Quema"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/editTextlote"/>
+
+        <EditText
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:id="@+id/editTextOrdenQuema"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textViewOrdenQuema"
+            android:hint="Orden de Quema"
+            android:textColorHint="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewFechaCorte"
+            android:text="Fecha Corte"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/editTextOrdenQuema"/>
+
+        <EditText
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:id="@+id/editTextFechaCorte"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textViewFechaCorte"
+            android:hint="Fecha de Corte"
+            android:textColorHint="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewClaveCorte"
+            android:text="Clave Corte"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/editTextFechaCorte"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listaClaveCorte"
+            android:layout_below="@+id/textViewClaveCorte"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewFormaDeTiro"
+            android:text="Forma de Tiro"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/listaClaveCorte"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listaFormaDeTiro"
+            android:layout_below="@+id/textViewFormaDeTiro"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewCodigoCabezal"
+            android:text="Codigo Cabezal"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/listaFormaDeTiro"/>
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textViewCodigoCabezal"
+            android:id="@+id/codigoCabezal"
+            android:inputType="textCapCharacters"
+            android:minEms="10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Codigo Cabezal"
+            android:textColorHint="@android:color/transparent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textViewConductorCabezal"
+            android:text="Conductor Cabezal"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/codigoCabezal"/>
+
+        <AutoCompleteTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minEms="5"
+            android:inputType="number"
+            android:id="@+id/conductorCabezal"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/textViewConductorCabezal"
+            android:textColorHint="@android:color/transparent"
+            android:hint="Coductor Cabezal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtDescConductorCabezal"
+            android:layout_toRightOf="@+id/conductorCabezal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textViewConductorCabezal"
+            android:layout_alignBottom="@+id/conductorCabezal"
+            android:gravity="center"
+            android:editable="false"
+            android:focusable="false"/>
+
+    </RelativeLayout>
+
+</ScrollView>

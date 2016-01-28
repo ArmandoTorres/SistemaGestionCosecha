@@ -1,0 +1,10 @@
+<resources>
+    <color name="color_primary">#3F51B5</color>
+    <color name="color_primary_dark">#303F9F</color>
+    <color name="color_primary_light">#92a1f4</color>
+    <color name="color_accent">#FF4081</color>
+    <color name="color_Black_Dark">#000000</color>
+    <color name="color_light">#B3E5FC</color>
+    <color name="color_not_send">#9dff0005</color>
+    <color name="color_send">#B3E5FC</color>
+</resources>

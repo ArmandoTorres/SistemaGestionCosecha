@@ -1,0 +1,29 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/azucares_main"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/nav_userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

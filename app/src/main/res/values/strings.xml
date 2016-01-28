@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">SGC</string>
+    <string name="app_description_name">Sistema Gestion Cosecha</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="accion_buscar">Search</string>
+    <string name="accion_nuevo">Add</string>
+
+    <string name="name">Nombre</string>
+    <string name="date">Fecha</string>
+    <string name="period">Período</string>
+    <string name="map_number">No. Map</string>
+    <string name="map_number_before">NMP</string>
+
+    <string name="farm">Finca</string>
+    <string name="cane">Cañial</string>
+    <string name="batch">Lote</string>
+    <string name="line">Linea</string>
+
+    <!-- ======================== custom alert dialog ==================== -->
+    <string name="customAlertDialogButtonMessage">Elegir Dispositivo</string>
+    <!-- ================================================================= -->
+
+    <!-- ======================== Menu ================================= -->
+    <string name="unplugged">Desconectado</string>
+    <string name="plugged">Connectado</string>
+    <!-- ================================================================= -->
+
+    <!-- ======================== Drawer Menu ============================ -->
+    <string name="raise">Uñadas</string>
+    <string name="weight">Peso</string>
+    <!-- ================================================================= -->
+
+    <string name="openDrawer">opening drawer component</string>
+    <string name="closeDrawer">closing drawer component</string>
+
+    <string name="syncSuccess">Sincronizado</string>
+    <string name="sync_name">Sincronizar Tablas</string>
+
+    <!-- ======================== Drawer Menu ============================ -->
+    <string name="switch_user">Cambiar Usuario</string>
+    <string name="work_title">Envio</string>
+    <string name="work">Ingreso de Envio</string>
+
+    <string name="reports">Reportes</string>
+    <string name="menuEnviosOpcion">Envios</string>
+    <string name="place">Lugar Corte</string>
+
+    <string name="settings">Configuraciones</string>
+
+    <string name="sync_title">Sincronizar</string>
+    <string name="client">Cliente</string>
+    <string name="server">Servidor</string>
+    <string name="logout">Salir</string>
+    <string name="select_bluetooth_device">Selc. Printer</string>
+    <!-- ================================================================= -->
+
+    <!-- ========================= Data Base ============================= -->
+    <string name="db_name">production</string>
+    <string name="db_version">1</string>
+    <!-- ================================================================= -->
+
+    <!-- ========================== Setting ============================== -->
+    <string name="uri_server">Dirección Del Servidor</string>
+    <string name="uri1">Servidor 1</string>
+    <string name="uri2">Servidor 2</string>
+
+    <string name="server_execute">Sincronizar Servidor</string>
+    <string name="auto_execute">Ejecutar Automaticamente</string>
+    <string name="interval">Tiempo de sincronización</string>
+    <string name="last_send">Ultimo Envio</string>
+    <string name="interval_info">El tiempo se calcula en Segundos</string>
+    <!-- ================================================================= -->
+
+    <!-- ========================== Login ================================ -->
+    <string name="username">Usuario</string>
+    <string name="password">Contraseña</string>
+
+    <string name="login_success">Login Exitoso!!!</string>
+    <string name="login_reject">Ususario o Contraseña Incorrecto</string>
+    <!-- ================================================================= -->
+
+    <!-- Formulario1 String -->
+    <string name="formulario1_sub_title">Registro Nota de Envio Paso 1</string>
+    <string name="formulario2_sub_title">Registro Nota de Envio Paso 2</string>
+    <string name="formulario3_sub_title">Registro Nota de Envio Paso 3</string>
+    <string name="formulario4_sub_title">Registro Nota de Envio Paso 4</string>
+    <string name="listado_sub_title">Consulta de Envios</string>
+
+    <!-- Required Fields -->
+    <string name="required_fields">Debe indicar la informacion para el campo </string>
+    <string name="data_base_parameter_title">Parametros Generales</string>
+
+    <!-- DEFAULT DATE FORMAT-->
+    <string name="default_date_format">yyyy-MM-dd</string>
+    <string name="mobile_setting_title">Parametros del Dispositivo</string>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="pc_server"
+        android:title="@string/uri_server">
+
+        <EditTextPreference
+            android:key="etp_uri1"
+            android:title="@string/uri1"
+            android:dialogTitle="@string/uri1"
+            android:inputType="textUri"/>
+
+        <EditTextPreference
+            android:key="etp_uri2"
+            android:title="@string/uri2"
+            android:dialogTitle="@string/uri2"
+            android:inputType="textUri"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pc_auto_execute"
+        android:title="@string/server_execute">
+
+        <CheckBoxPreference
+            android:key="cbp_auto_execute"
+            android:title="@string/auto_execute"
+            android:checked="true"/>
+
+        <EditTextPreference
+            android:key="etp_interval"
+            android:title="@string/interval"
+            android:summary="@string/interval_info"
+            android:inputType="number"
+            android:text="30"/>
+
+        <EditTextPreference
+            android:key="etp_last_execution"
+            android:title="@string/last_send"
+            android:enabled="false"
+            android:summary="00/00/00 00:00"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="data_base_parameter"
+        android:title="@string/data_base_parameter_title">
+
+        <com.cac.customcomponents.MyCustomPreferencesEmpresas
+            android:title="Empresa"
+            android:key="EMPRESA"
+            android:defaultValue="30"/>
+
+        <com.cac.customcomponents.MyCustomPreferencesPeriodos
+            android:title="Periodo"
+            android:key="PERIODO"
+            android:defaultValue="20"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="mobile_settings"
+        android:title="@string/mobile_setting_title">
+
+        <EditTextPreference
+            android:key="EMEI"
+            android:title="Identificador EMEI"
+            android:enabled="false"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

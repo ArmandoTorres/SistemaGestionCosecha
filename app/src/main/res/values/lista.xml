@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Claves de corte para el envio -->
+    <string-array name="clave_corte">
+        <item>Verde</item>
+        <item>Accidental</item>
+        <item>Quemado</item>
+        <item>Criminal</item>
+    </string-array>
+    <!-- ============================= -->
+
+    <!-- Forma de Tiro -->
+    <string-array name="forma_tiro">
+        <item>Cabezal</item>
+        <item>Directo</item>
+        <item>Mixto</item>
+    </string-array>
+    <!-- ============================= -->
+
+</resources>
