@@ -249,6 +249,17 @@ public abstract class AbstractFragment extends Fragment implements MainComponent
         }
     }
 
+    public void validateVehiculosIfNotNull(View v, Boolean hasFocus, String codigoGrupo){
+        EditText field = (EditText) v;
+        if (!hasFocus) {
+            if (getContext().getEntityManager() != null && ((EditText) v).getText() != null) {
+                if ( !findListadoVehiculos(Vehiculos.class,codigoGrupo).contains(field.getText().toString()) ) {
+                    field.setError("El " + field.getHint() + " no se encuentra registrado en la base de datos.");
+                }
+            }
+        }
+    }
+
     public void addInitValue(TextView t, String value){
         t.append(value);
     }

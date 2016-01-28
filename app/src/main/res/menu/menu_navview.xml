@@ -52,6 +52,15 @@
                 android:id="@+id/server_sync"
                 android:title="@string/server"
                 android:icon="@drawable/sync_server"/>
+            <item
+                android:id="@+id/nav_bk_database"
+                android:title="@string/bk_database"
+                android:icon="@drawable/bk_data_base"/>
+            <item
+                android:id="@+id/nav_up_database"
+                android:title="@string/up_database"
+                android:icon="@drawable/bk_data_base"/>
+
         </menu>
     </item>
 

@@ -55,6 +55,8 @@
     <string name="server">Servidor</string>
     <string name="logout">Salir</string>
     <string name="select_bluetooth_device">Selc. Printer</string>
+    <string name="bk_database">Exportar BD</string>
+    <string name="up_database">Importar BD</string>
     <!-- ================================================================= -->
 
     <!-- ========================= Data Base ============================= -->

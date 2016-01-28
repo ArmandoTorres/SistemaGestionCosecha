@@ -252,7 +252,8 @@ public class SyncFragment extends Fragment implements MainComponentEdit {
                 public void onSyncSuccess(Object... args) {
                     JSONObject obj = new JSONObject();
                     try{
-                        obj.put("login","sync");
+                        obj.put("room","sync");
+                        sendMessage("login",obj);
                     }catch (JSONException e){
                         e.printStackTrace();
                     }

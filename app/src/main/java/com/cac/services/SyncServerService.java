@@ -146,19 +146,20 @@ public class SyncServerService extends Service {
             JSONObject values = new JSONObject();
             row.put("tableName",tableName);
 
-            String[] columns =  entity.getColumnsNameAsString(tableName.equals(tableName)).split(",");
+            String[] columns =  entity.getColumnsNameAsString(false).split(",");
 
             for (int i = 0; i < columns.length; i++) {
                 if ( columns[i].toLowerCase().contains("fecha") ) {
-                    Long fechaLong = Long.valueOf(entity.getColumnValueList().getAsString(columns[i])).longValue();
-                    Date fecha = new Date(fechaLong);
-                    String fechaString = new SimpleDateFormat("yyyy-MM-dd").format(fecha);
-                    values.put(columns[i], fechaString);
+                    try {
+                        Long fechaLong = Long.valueOf(entity.getColumnValueList().getAsString(columns[i])).longValue();
+                        Date fecha = new Date(fechaLong);
+                        String fechaString = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(fecha);
+                        values.put(columns[i], fechaString);
 
-                    //Columnas de fechas.
-                    if (rows.length() == 0)
-                        dates.put(columns[i]);
-
+                        //Columnas de fechas.
+                        if (rows.length() == 0)
+                            dates.put(columns[i]);
+                    } catch (java.lang.NumberFormatException nfe){}
                 } else
                     values.put(columns[i],entity.getColumnValueList().getAsString(columns[i]));
             }

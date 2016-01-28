@@ -52,8 +52,13 @@ public class Formulario2 extends AbstractFragment {
     //<editor-fold desc="Get's and Set's">
     public Date getFechaCorte() {
         try {
-            SimpleDateFormat formater = new SimpleDateFormat("dd/MM/yyyy");
-            Date date = formater.parse(fechaCorte.getText().toString());
+            SimpleDateFormat formater = new SimpleDateFormat("dd/MM/yyyy HH-mm-ss");
+            Calendar calendar = Calendar.getInstance();
+            String hour = String.format("%02d", calendar.get(Calendar.HOUR_OF_DAY));
+            String min  = String.format("%02d", calendar.get(Calendar.MINUTE));
+            String seg  = String.format("%02d", calendar.get(Calendar.SECOND));
+            String fecha = fechaCorte.getText().toString()+" "+hour+"-"+min+"-"+seg;
+            Date date = formater.parse(fecha);
             //return Long.toString(date.getTime());
             return date;
         } catch (ParseException e) {
@@ -263,6 +268,9 @@ public class Formulario2 extends AbstractFragment {
                             autoCompleteConductorCabezal.invalidate();
                             txtDescConductorCabezal.setEnabled(true);
                             txtDescConductorCabezal.invalidate();
+                            getContext().getFormulario4Fragment().getListaCodigoVagones().setText("");
+                            getContext().getFormulario4Fragment().getListaCodigoVagones().setEnabled(false);
+                            getContext().getFormulario4Fragment().getListaCodigoVagones().invalidate();
                             break;
                         case "directo":
                             autoCompleteListaCabezales.setText("");
@@ -274,6 +282,8 @@ public class Formulario2 extends AbstractFragment {
                             txtDescConductorCabezal.setText("");
                             txtDescConductorCabezal.setEnabled(false);
                             txtDescConductorCabezal.invalidate();
+                            getContext().getFormulario4Fragment().getListaCodigoVagones().setEnabled(true);
+                            getContext().getFormulario4Fragment().getListaCodigoVagones().invalidate();
                             break;
                     }
                 }catch (Exception ex) {}

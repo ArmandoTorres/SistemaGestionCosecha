@@ -9,9 +9,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.preference.PreferenceManager;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
@@ -19,7 +19,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
@@ -31,10 +30,12 @@ import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.cac.R;
 import com.cac.entities.*;
 import com.cac.services.SyncServerService;
+import com.cac.tools.BackupBD;
 import com.cac.tools.MainComponentEdit;
 import com.cac.tools.PrinterManager;
 import com.cac.tools.ServerStarter;
@@ -126,7 +127,6 @@ public class MainActivity extends AppCompatActivity {
 
         //Setting up data base.
         initializeDataBase();
-        //
 
     }
 
@@ -215,11 +215,15 @@ public class MainActivity extends AppCompatActivity {
                 menu.findItem(R.id.client_sync).setEnabled(false);
                 menu.findItem(R.id.server_sync).setEnabled(false);
                 menu.findItem(R.id.setting).setEnabled(false);
+                menu.findItem(R.id.nav_bk_database).setEnabled(false);
+                menu.findItem(R.id.nav_up_database).setEnabled(false);
             }else if(userLow.equals("admin")){
                 menu = navigationView.getMenu();
                 menu.findItem(R.id.client_sync).setEnabled(true);
                 menu.findItem(R.id.server_sync).setEnabled(true);
                 menu.findItem(R.id.setting).setEnabled(true);
+                menu.findItem(R.id.nav_bk_database).setEnabled(true);
+                menu.findItem(R.id.nav_up_database).setEnabled(true);
             }else{
                 USER = "";
                 finish();
@@ -332,11 +336,16 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onDatabaseUpdate(ConnectSQLite conn, SQLiteDatabase db) {
                     List<List<Entity>> entities = new ArrayList<List<Entity>>();
-                    List<Entity> value;
+                    List<Entity> value = new ArrayList<Entity>();
 
                     entities.add(new Users().getDefaultInsert());
 
-                    value = new Transaccion(this).getDefaultInsert();
+                    //Backingup database tables.
+                    for (String str : getTablesNames()){
+                        Cursor cursor = db.rawQuery("select * from "+str,null);
+                        setListFromCursor(cursor,value,getClassByName(str));
+                    }
+
                     if(value != null)
                         entities.add(value);
 
@@ -520,6 +529,14 @@ public class MainActivity extends AppCompatActivity {
                                 manager.setContext(MainActivity.this);
                                 manager.chooseBluetoothDevice(false);
                                 break;
+                            case R.id.nav_bk_database:
+                                BackupBD bk = new BackupBD(MainActivity.this,getEntityManager());
+                                bk.execute(0);
+                                break;
+                            case R.id.nav_up_database:
+                                BackupBD up = new BackupBD(MainActivity.this,getEntityManager());
+                                up.execute(1);
+                                break;
                         }
                         drawerLayout.closeDrawers();
                         return true;
@@ -538,4 +555,17 @@ public class MainActivity extends AppCompatActivity {
     public MenuItem getStatusConnection(){
         return statusConnection;
     }
+
+    /*public void backupDataBaseOnFileDirectory() {
+        try {
+            for (Class entityClass : getEntityManager().getTables()) {
+                Entity instance = getEntityManager().initInstance(entityClass);
+                getEntityManager().exportEntityToXML(instance.getName(), getEntityManager().find(entityClass, "*", null, null));
+            }
+            Toast.makeText(this,"El backup fue realizado correctamente.",Toast.LENGTH_SHORT).show();
+        } catch ( Exception ex ) {
+            Toast.makeText(this,"Error al realizar el backup.",Toast.LENGTH_LONG).show();
+            Log.e("Error","Al realizar el backup.",ex);
+        }
+    }*/
 }

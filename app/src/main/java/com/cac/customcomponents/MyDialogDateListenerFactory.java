@@ -5,6 +5,8 @@ import android.widget.EditText;
 import android.widget.DatePicker;
 import android.app.DatePickerDialog;
 
+import java.util.Calendar;
+
 /**
  * Created by Legal on 13/10/2015.
  */
@@ -18,8 +20,9 @@ public class MyDialogDateListenerFactory implements DatePickerDialog.OnDateSetLi
 
     @Override
     public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-        if ( field instanceof EditText )
-            ((EditText) field).setText(putZeroBefore(dayOfMonth) + "/" + putZeroBefore(monthOfYear+1) + "/" + year);
+        if ( field instanceof EditText ) {
+            ((EditText) field).setText(putZeroBefore(dayOfMonth) + "/" + putZeroBefore(monthOfYear + 1) + "/" + year );
+        }
     }
 
     private String putZeroBefore(int number){

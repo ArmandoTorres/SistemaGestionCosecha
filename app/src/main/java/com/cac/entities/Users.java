@@ -21,11 +21,12 @@ public class Users extends Entity {
     public static String PASSWORD = "contrasena";
     public static String EMAIL = "email";
     public static String ROLE = "role";
+    public static String TABLE_NAME = "USUARIO_SISTEMAS";
 
     @Override
     public Entity entityConfig (){
 
-        setName("USUARIO_SISTEMAS");
+        setName(TABLE_NAME);
         setNickName("Usuarios");
 
         addColumn(new EntityColumn<String>(USER, EntityColumn.ColumnType.TEXT));
@@ -53,7 +54,7 @@ public class Users extends Entity {
         List<Entity> list= new ArrayList<Entity>();
         Users user = (Users)new Users().entityConfig();
 
-        user.setValue(Users.USER, "Admin");
+        user.setValue(Users.USER, "ADMIN");
         user.setValueToEncrypt(Users.PASSWORD, "1234");
         user.setValue(Users.EMAIL, "bkcac30@gmail.com");
         user.setValue(Users.ROLE, "ADMIN");

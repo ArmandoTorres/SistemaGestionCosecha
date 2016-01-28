@@ -198,16 +198,33 @@ public class Formulario3 extends AbstractFragment {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 validateVehiculos(v, hasFocus, "A");
-                if (hasFocus && ((AutoCompleteTextView) v).getText().length() <= 1)
-                    addInitValue((TextView) v, "A" + ((AutoCompleteTextView) v).getText());
 
             }
         });
-        listaCodigoCosechadora.setOnKeyListener(new View.OnKeyListener() {
+        listaCodigoTractor.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (((AutoCompleteTextView) v).getText().length() <= 1)
-                    addInitValue((TextView) v, "A" + ((AutoCompleteTextView) v).getText());
+                String values;
+                try{
+                    if (((AutoCompleteTextView) v).getText().length() == 1 &&
+                            Integer.parseInt(((AutoCompleteTextView) v).getText()+"") != 2){
+                        values = ((AutoCompleteTextView) v).getText()+"";
+                        ((AutoCompleteTextView) v).setText("");
+
+                        if(Integer.parseInt(values) <= 1) ((AutoCompleteTextView) v).append("A180" + values);
+                        else if(Integer.parseInt(values) <= 3) ((AutoCompleteTextView) v).append("A090" + values);
+
+                    }else if(((AutoCompleteTextView) v).getText().length() == 2){
+                        values = ((AutoCompleteTextView) v).getText()+"";
+                        ((AutoCompleteTextView) v).setText("");
+
+                        if(Integer.parseInt(values) > 20) ((AutoCompleteTextView) v).append("A090" + values);
+                        else ((AutoCompleteTextView) v).append("A180" + values);
+                    }
+                }catch (NumberFormatException e){
+                    ((AutoCompleteTextView) v).setText("");
+                    return true;
+                }
                 return false;
             }
         });

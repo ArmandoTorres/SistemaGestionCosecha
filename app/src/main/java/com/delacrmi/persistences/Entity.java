@@ -5,6 +5,8 @@ import android.content.Context;
 import android.util.Base64;
 import android.util.Log;
 
+import com.cac.viewer.Listado;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -24,8 +26,8 @@ import java.util.Set;
 public abstract class Entity implements Serializable {
 
     private String entityName = "";
-    private String nickName = "";
-    private String pk = "";
+    private String nickName   = "";
+    private String pk         = "";
 
     private HashMap<String,ContentValues> constraint = new HashMap<String,ContentValues>();
     private ContentValues constraintDetails;
@@ -194,7 +196,9 @@ public abstract class Entity implements Serializable {
     public ContentValues getColumns(){
         return columnList;
     }
-
+    public List<EntityColumn> getEntityColumnList(){
+        return columns;
+    }
     public String getColumnsNameAsString(boolean primaryKey){
         int count = 1;
         String columns = "";
@@ -313,7 +317,7 @@ public abstract class Entity implements Serializable {
         if(pk.equals("")){
             pk = entityName+"_id";
             columnList.put(pk,"integer");
-            addColumn(new EntityColumn<Long>(pk, EntityColumn.ColumnType.NUMERIC, true, true));
+            addColumn(new EntityColumn<Long>(pk, EntityColumn.ColumnType.INTEGER, true, true));
         }
         return this;
     }
@@ -461,23 +465,25 @@ public abstract class Entity implements Serializable {
         }
     }
 
-    private String getValuesByTypeAsString(EntityColumn content){
+    public String getValuesByTypeAsString(EntityColumn content){
+
         String value = "";
 
-        if (content.getType() == EntityColumn.ColumnType.INTEGER) {
-            if(content.getValue() != null) value = ((Integer)content.getValue()).toString();
+        if (content.getValue() != null)
+            if (content.getType() == EntityColumn.ColumnType.INTEGER) {
+                value = ((Integer)content.getValue()).toString();
 
-        }else if (content.getType() == EntityColumn.ColumnType.TEXT) {
-            if(content.getValue() != null) value = ((String)content.getValue());
+            }else if (content.getType() == EntityColumn.ColumnType.TEXT) {
+                value = ((String)content.getValue());
 
-        }else if (content.getType() == EntityColumn.ColumnType.REAL) {
-            if(content.getValue() != null) value = ((Double)content.getValue()).toString();
+            }else if (content.getType() == EntityColumn.ColumnType.REAL) {
+                value = ((Double)content.getValue()).toString();
 
-        }else if (content.getType() == EntityColumn.ColumnType.DATE) {
-            if(content.getValue() != null) value = ((Long)((Date)content.getValue()).getTime()).toString();
+            }else if (content.getType() == EntityColumn.ColumnType.DATE) {
+                value = ((Long)((Date)content.getValue()).getTime()).toString();
 
-        }else
-        if (content.getValue() != null) value = ((Double)content.getValue()).toString();
+            }else
+                value = ((Double)content.getValue()).toString();
 
         return value;
     }
@@ -534,18 +540,5 @@ public abstract class Entity implements Serializable {
             return new EntityColumn<Double>(name,type);
         else
             return new EntityColumn<Date>(name,type);
-    }
-
-    public String getColumnValueListAsString() {
-
-        String description = "";
-
-        if (columnValueList.size() > 0) {
-            for (String name : columnValueList.keySet()) {
-                description += columnValueList.getAsString(name);
-            }
-        }
-
-        return description;
     }
 }

@@ -7,7 +7,6 @@ import android.view.View.OnFocusChangeListener;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import com.atorres.BluetoothPrinterManager;
 import com.cac.customcomponents.AbstractFragment;
 import com.cac.tools.FormatReportData;
 import com.cac.tools.MainComponentEdit;
@@ -33,7 +32,6 @@ public class Listado extends AbstractFragment implements MainComponentEdit {
     private EditText editFiltroPorFecha;
     private ImageButton generarReporte;
     private ListView listadoTransacciones;
-    private static BluetoothPrinterManager bluetoothPrinterManager = null;
 
     public Listado init(MainActivity context, EntityManager entityManager) {
         return (Listado) super.init(context,R.layout.listado,entityManager,TAG);

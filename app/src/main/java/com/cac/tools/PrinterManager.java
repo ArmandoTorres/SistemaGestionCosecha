@@ -154,9 +154,10 @@ public class PrinterManager {
         ConnectionBase conn = null;
         int row = 50;
         int col = 1;
+        Looper.prepare();
         try {
 
-            Looper.prepare();
+
 
             if (AppParameters.BLUETOOTH_PRINTER_MACADDRESS == null){
 
@@ -210,7 +211,7 @@ public class PrinterManager {
                 }
             }
 
-            Looper.loop();
+
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -224,6 +225,8 @@ public class PrinterManager {
                     AndroidUtils.showAlertMsg(context, "Notificacion", "Ocurrio un error al cerrar la coneccion con el dispositivo bluetooth.");
                 }
             }
+            Looper.loop();
         }
+
     }
 }

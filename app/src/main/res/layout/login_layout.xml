@@ -37,6 +37,7 @@
                 android:layout_height="35dp"
                 android:gravity="center"
                 android:textStyle="bold"
+                android:capitalize="characters"
                 android:hint="@string/username"
                 android:textColor="@color/color_accent"
                 android:singleLine="true"

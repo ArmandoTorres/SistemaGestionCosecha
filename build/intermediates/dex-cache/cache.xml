@@ -2,165 +2,109 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\classes-e70ab050ec1284231599eefe41bd32128e9af795.jar" />
-    </item>
-    <item
-        jar="C:\Users\Legal\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-0c79f643fd0fcfe9bc5dc3d416d19e9bf5669d23.jar" />
-    </item>
-    <item
-        jar="C:\Users\Legal\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\2.2\cba0b93b0072105d808ef7a00a107a4eb97874e7\core-2.2.jar"
+        jar="C:\Users\delacrmi\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\2.2\cba0b93b0072105d808ef7a00a107a4eb97874e7\core-2.2.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="cba0b93b0072105d808ef7a00a107a4eb97874e7">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\core-2.2-380174d84e3f4e805a2eddbda45efbb1e8f1a36d.jar" />
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\core-2.2-2feb7444dc52acc6cb143ab818cb7fffac121388.jar" />
     </item>
     <item
-        jar="C:\Users\Legal\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp-ws\2.5.0\e9753b7dcae5deca92e871c5c759067070b07bc\okhttp-ws-2.5.0.jar"
+        jar="D:\SistemaGestionCosecha\SGC\app\libs\customandroidapi.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="981576190bd859e34a84f479f2c6c4262e1bec61">
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\customandroidapi-c0f5b76d48854747b2b4ad52157ebd7c2246b336.jar" />
+    </item>
+    <item
+        jar="D:\SistemaGestionCosecha\SGC\app\libs\do_androidsdk.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c0f3d2a4e8618ef9901978075f915084183da5ca">
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\do_androidsdk-35ba05c673c4f3b7f01247d5307b34e9df494487.jar" />
+    </item>
+    <item
+        jar="C:\Users\delacrmi\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-0fce2ca85addd5ff81768a77a77ec2817809c96a.jar" />
+    </item>
+    <item
+        jar="D:\SistemaGestionCosecha\SGC\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\classes-49cc2d5b4aa7d0fa2de64760d10443a398ee2528.jar" />
+    </item>
+    <item
+        jar="C:\Users\delacrmi\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp-ws\2.5.0\e9753b7dcae5deca92e871c5c759067070b07bc\okhttp-ws-2.5.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="0e9753b7dcae5deca92e871c5c759067070b07bc">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\okhttp-ws-2.5.0-91f30bbb3aa23b1b96dfcc10fd122c7663806ab8.jar" />
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\okhttp-ws-2.5.0-bb075e43d77c20d67398003fafdea52a736fb4b6.jar" />
     </item>
     <item
-        jar="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
-        <dex dex="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\pre-dexed\debug\classes-796cf9156134d9d911c94d8b93c5f82c2e04f778.jar" />
-    </item>
-    <item
-        jar="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\libs\do_androidsdk.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c0f3d2a4e8618ef9901978075f915084183da5ca">
-        <dex dex="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\pre-dexed\debug\do_androidsdk-0d6b7b67e8db3bf9dc3d95564c0f3f8c39cae982.jar" />
-    </item>
-    <item
-        jar="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\classes-3802934fee3cc5ee470c03e90ec4d290b992138d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\libs\customandroidapi.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="981576190bd859e34a84f479f2c6c4262e1bec61">
-        <dex dex="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\pre-dexed\debug\customandroidapi-00ea987221db08ea77dab8bb027b272df6dfb171.jar" />
-    </item>
-    <item
-        jar="C:\Users\Legal\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.5.0\4de2b4ed3445c37ec1720a7d214712e845a24636\okhttp-2.5.0.jar"
+        jar="C:\Users\delacrmi\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.5.0\4de2b4ed3445c37ec1720a7d214712e845a24636\okhttp-2.5.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\okhttp-2.5.0-39b8974b64fc54ae5af54d1691ecee3b0c3ce8e1.jar" />
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\okhttp-2.5.0-da0f2135e4cea130bbcdd7654474ae68e8bc2474.jar" />
     </item>
     <item
-        jar="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\libs\customandroidapi.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="981576190bd859e34a84f479f2c6c4262e1bec61">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\customandroidapi-0c5278fc4f5557ea4d2c89f28c40db59a86e5d70.jar" />
-    </item>
-    <item
-        jar="C:\Users\Legal\.gradle\caches\modules-2\files-2.1\io.socket\engine.io-client\0.6.2\939f90d47c800626d5b0a4e7f89f98b3dde61dc6\engine.io-client-0.6.2.jar"
+        jar="C:\Users\delacrmi\.gradle\caches\modules-2\files-2.1\io.socket\engine.io-client\0.6.2\939f90d47c800626d5b0a4e7f89f98b3dde61dc6\engine.io-client-0.6.2.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="939f90d47c800626d5b0a4e7f89f98b3dde61dc6">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\engine.io-client-0.6.2-27eba01b12f79ed0abca8744a2a871bd251f7060.jar" />
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\engine.io-client-0.6.2-3b8f476663ff6e0a86bdb57679b525fe4a008b66.jar" />
     </item>
     <item
-        jar="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
+        jar="D:\SistemaGestionCosecha\SGC\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\pre-dexed\debug\classes-91aff3586824cb647ed5fc4f9c7ae0ccf71287ab.jar" />
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\classes-25e46c4d21fe911b649d693423092bc487aa425a.jar" />
     </item>
     <item
-        jar="C:\Users\Legal\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jar="C:\Users\delacrmi\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\okio-1.6.0-c6e11d7a9fe0f274a0c16924a76c18962fb10695.jar" />
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\okio-1.6.0-d1aad8d8680afcd1bf7e6c2663dd6a3294e0a9c5.jar" />
     </item>
     <item
-        jar="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jar="D:\SistemaGestionCosecha\SGC\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\classes-41337e68a567e38025c97673193469622c02ef60.jar" />
+    </item>
+    <item
+        jar="D:\SistemaGestionCosecha\SGC\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\pre-dexed\debug\classes-31cb8d82e114a4eb7b45371ad1f0b2cdc97c93d1.jar" />
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\classes-b64529ef3b449968bae8033a5e426a80276e80ad.jar" />
     </item>
     <item
-        jar="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-f23298805d9753adf2d06d5dac88199bfa91f94b.jar" />
-    </item>
-    <item
-        jar="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\libs\do_androidsdk.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c0f3d2a4e8618ef9901978075f915084183da5ca">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\do_androidsdk-4641fcbcacb7fc039888f3783fc59b5421fc0a2f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
+        jar="D:\SistemaGestionCosecha\SGC\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\classes-660f383d65d61fdbfa89361b49c1ba7aa56c85bb.jar" />
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\classes-2166ee56734839f08256f24e744894fe6e58380f.jar" />
     </item>
     <item
-        jar="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
-        <dex dex="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\pre-dexed\debug\classes-53fc34245f62a458d71427164f6152ab27c58692.jar" />
-    </item>
-    <item
-        jar="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\Users\Legal\Documents\WorkSpace\AndroidStudioProject\Proyecto SAM Y SGC\SGC\app\build\intermediates\pre-dexed\debug\classes-9dd801913a95bc1b9cf25d010d6129ba7598acff.jar" />
-    </item>
-    <item
-        jar="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\classes-41fd8e83eb1a81aac4d6092b9b2f5246bb93434d.jar" />
-    </item>
-    <item
-        jar="C:\Users\Legal\.gradle\caches\modules-2\files-2.1\io.socket\socket.io-client\0.6.2\31fb4bf50b62daadee5e94f39679812ad8a9ae00\socket.io-client-0.6.2.jar"
+        jar="C:\Users\delacrmi\.gradle\caches\modules-2\files-2.1\io.socket\socket.io-client\0.6.2\31fb4bf50b62daadee5e94f39679812ad8a9ae00\socket.io-client-0.6.2.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="31fb4bf50b62daadee5e94f39679812ad8a9ae00">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\socket.io-client-0.6.2-ad501192ba73d3f2ad71e3dec0486e5c351265c6.jar" />
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\socket.io-client-0.6.2-7d0b25f168724cc1a1918961a1375c3e3e7b81dd.jar" />
     </item>
     <item
-        jar="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jar="D:\SistemaGestionCosecha\SGC\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-d8df4775029703940e4a84d4bfa3e1eb074f7b15.jar" />
-    </item>
-    <item
-        jar="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="C:\Users\Legal\Desktop\SistemaGestionCosecha\app\build\intermediates\pre-dexed\debug\classes-197f63dc3601106a98e48ca3a76c5414f616a6fb.jar" />
+        <dex dex="D:\SistemaGestionCosecha\SGC\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-2109a2f98dffd30402050d28443faf40ef1d544a.jar" />
     </item>
 
 </items>

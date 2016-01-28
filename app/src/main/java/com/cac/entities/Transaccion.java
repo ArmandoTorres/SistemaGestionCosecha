@@ -38,6 +38,7 @@ public class Transaccion extends Entity {
     public static String DISPOSITIVO          = "dispositivo";
     public static String APLICACION           = "aplicacion";
     public static String FORMA_TIRO           = "forma_tiro";
+    public static String FECHA_ENVIO          = "fecha_envio";
 
     public Transaccion(){}
     public Transaccion(EntityManager manager){
@@ -71,6 +72,7 @@ public class Transaccion extends Entity {
         addColumn(Transaccion.DISPOSITIVO, EntityColumn.ColumnType.TEXT);
         addColumn(Transaccion.APLICACION, EntityColumn.ColumnType.TEXT);
         addColumn(Transaccion.FORMA_TIRO, EntityColumn.ColumnType.TEXT);
+        addColumn(Transaccion.FECHA_ENVIO,EntityColumn.ColumnType.DATE);
         setSynchronizable(false);
         return this;
     }

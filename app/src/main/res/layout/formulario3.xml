@@ -6,10 +6,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/formulario3">
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/formulario3">
 
         <TextView
             android:layout_width="match_parent"
@@ -26,7 +26,8 @@
             android:id="@+id/listaCodigoCarreta"
             android:layout_below="@+id/textViewCodigoCarreta"
             android:layout_alignParentLeft="true"
-            android:inputType="textCapCharacters"
+            android:inputType="number"
+            android:digits="1234567890C"
             android:minEms="10"
             android:layout_alignParentStart="true"
             android:hint="Codigo Carreta"
@@ -49,7 +50,8 @@
             android:id="@+id/listaCodigoCosechadora"
             android:layout_below="@+id/textViewCodigoCosechadora"
             android:layout_alignParentLeft="true"
-            android:inputType="textCapCharacters"
+            android:inputType="number"
+            android:digits="1234567890D"
             android:minEms="10"
             android:layout_alignParentStart="true"
             android:hint="Codigo Cosechadora"
@@ -106,7 +108,8 @@
             android:id="@+id/listaCodigoTractor"
             android:layout_below="@+id/textViewCodigoTractor"
             android:layout_alignParentLeft="true"
-            android:inputType="textCapCharacters"
+            android:inputType="number"
+            android:digits="1234567890A"
             android:minEms="10"
             android:layout_alignParentStart="true"
             android:hint="Coductor Tractor"
