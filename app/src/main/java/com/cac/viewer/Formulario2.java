@@ -17,7 +17,9 @@ import android.widget.Toast;
 
 import com.cac.customcomponents.AbstractFragment;
 import com.cac.customcomponents.OnKeyListenerRefactory;
+import com.cac.entities.ClaveCorte;
 import com.cac.entities.EmpleadoCabezal;
+import com.cac.entities.FormaTiro;
 import com.delacrmi.persistences.Entity;
 import com.delacrmi.persistences.EntityManager;
 
@@ -237,23 +239,11 @@ public class Formulario2 extends AbstractFragment {
             }
         });
 
-        //Llenamos la lista en pantalla con las claves de corte
-        String [] clavesCorte = this.getResources().getStringArray(R.array.clave_corte);
-        List<String> listaClavesCorte = Arrays.asList(clavesCorte);
-        if (listaClavesCorte != null && !listaClavesCorte.isEmpty() ){
-            ArrayAdapter<String> adapterClaveCorte = new ArrayAdapter<>(getContext(),
-                    android.R.layout.simple_selectable_list_item,listaClavesCorte);
-            listaClaveCorte.setAdapter(adapterClaveCorte);
-        }
+        //Llenamos la lista en pantalla con las claves de corte.
+        listaClaveCorte.setAdapter(getData(ClaveCorte.class,ClaveCorte.ID));
 
-        //Llenamos la lista en pantalla con las Forma de Tiro
-        String [] formaDeTiro = this.getResources().getStringArray(R.array.forma_tiro);
-        List<String> listaDeTiro = Arrays.asList(formaDeTiro);
-        if ( listaDeTiro != null && !listaDeTiro.isEmpty()){
-            ArrayAdapter<String> adapterFormaDeTiro = new ArrayAdapter<>(getContext(),
-                    android.R.layout.simple_selectable_list_item,listaDeTiro);
-            listaFormaTiro.setAdapter(adapterFormaDeTiro);
-        }
+        //Llenamos la lista en pantalla con las Forma de Tiro.
+        listaFormaTiro.setAdapter(getData(FormaTiro.class, FormaTiro.ID));
 
         listaFormaTiro.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

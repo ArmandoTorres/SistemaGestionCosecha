@@ -159,6 +159,8 @@ public class MainActivity extends AppCompatActivity {
                 .addTable(Transaccion.class)
                 .addTable(Periodos.class)
                 .addTable(Users.class)
+                .addTable(FormaTiro.class)
+                .addTable(ClaveCorte.class)
                 .init();
     }
 

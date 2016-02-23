@@ -87,7 +87,7 @@ public class Formulario4 extends AbstractFragment {
         //Llenando parametros de control
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getContext());
         EMPRESA =  sharedPreferences.getString("EMPRESA","30");
-        PERIODO =  sharedPreferences.getString("PERIODO", "30");
+        PERIODO =  sharedPreferences.getString("PERIODO", "20");
         APLICACION = sharedPreferences.getString("NOMBRE_APLICACION", "SGC");
         TelephonyManager telephonyManager = (TelephonyManager)getContext().getSystemService(Context.TELEPHONY_SERVICE);
         DISPOSITIVO = telephonyManager.getDeviceId();

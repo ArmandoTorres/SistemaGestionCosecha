@@ -31,7 +31,9 @@
                     android:id="@+id/main_body_layout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_above="@+id/main_body_action_layout"/>
+                    android:layout_above="@+id/main_body_action_layout">
+
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/main_body_action_layout"

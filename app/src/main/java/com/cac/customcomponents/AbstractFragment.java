@@ -178,6 +178,28 @@ public abstract class AbstractFragment extends Fragment implements MainComponent
 
 
     /**
+     * Metodo utilizado paara buscar descripciones en la base de datos
+     *
+     * @return listado de descripciones.
+     * @param entity nombre de la entidad en la cual se va a buscar la data.
+     * @param field del campo a buscar
+     * */
+    public ArrayAdapter<String> getData(Class entity, String field) {
+
+        List<Entity> entities = entityManager.find(entity, field, null, null);
+        List<String> list = new ArrayList<>();
+        for (Entity a : entities ){
+            list.add(a.getColumnValueList().getAsString(field));
+        }
+        if ( list != null && !list.isEmpty() ){
+            Collections.sort(list);
+            return new ArrayAdapter<String>(context,android.R.layout.simple_selectable_list_item,list);
+        } else
+            return new ArrayAdapter<String>(context,android.R.layout.simple_selectable_list_item,new ArrayList<String>());
+    }
+
+
+    /**
      * Metodo que permite validar todos los edittext que existen en el formulario para idenficar
      * si son validos o no.
      *
