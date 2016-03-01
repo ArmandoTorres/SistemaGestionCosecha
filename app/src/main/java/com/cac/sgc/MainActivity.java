@@ -11,6 +11,7 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.AsyncTask;
 import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -532,12 +533,10 @@ public class MainActivity extends AppCompatActivity {
                                 manager.chooseBluetoothDevice(false);
                                 break;
                             case R.id.nav_bk_database:
-                                BackupBD bk = new BackupBD(MainActivity.this,getEntityManager());
-                                bk.execute(0);
+                                new BackupBD(MainActivity.this,getEntityManager()).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,0);
                                 break;
                             case R.id.nav_up_database:
-                                BackupBD up = new BackupBD(MainActivity.this,getEntityManager());
-                                up.execute(1);
+                                new BackupBD(MainActivity.this,getEntityManager()).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, 1);
                                 break;
                         }
                         drawerLayout.closeDrawers();
@@ -558,16 +557,4 @@ public class MainActivity extends AppCompatActivity {
         return statusConnection;
     }
 
-    /*public void backupDataBaseOnFileDirectory() {
-        try {
-            for (Class entityClass : getEntityManager().getTables()) {
-                Entity instance = getEntityManager().initInstance(entityClass);
-                getEntityManager().exportEntityToXML(instance.getName(), getEntityManager().find(entityClass, "*", null, null));
-            }
-            Toast.makeText(this,"El backup fue realizado correctamente.",Toast.LENGTH_SHORT).show();
-        } catch ( Exception ex ) {
-            Toast.makeText(this,"Error al realizar el backup.",Toast.LENGTH_LONG).show();
-            Log.e("Error","Al realizar el backup.",ex);
-        }
-    }*/
 }

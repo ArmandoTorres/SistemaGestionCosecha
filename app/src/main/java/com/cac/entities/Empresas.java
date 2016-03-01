@@ -1,9 +1,12 @@
 package com.cac.entities;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 
 import com.delacrmi.persistences.Entity;
 import com.delacrmi.persistences.EntityColumn;
+import com.delacrmi.persistences.EntityFilter;
 
 /**
  * Created by miguel on 10/10/15.
@@ -40,6 +43,6 @@ public class Empresas extends Entity {
 
     @Override
     public void configureEntityFilter(Context context) {
-
+        setEntityFilter(new EntityFilter(new String[]{ESTADO}, new String[]{EstadoEmpresas.ACTIVA.toString()}));
     }
 }
